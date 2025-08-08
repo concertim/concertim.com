@@ -4,9 +4,9 @@ title: Home
 
 {{< hero 
     headline="Supercomputing by Subscription"
-    sub_headline="Begin your journey into affordable, sustainable HPC & AI"
+    sub_headline="A multi-tenant solution for HPC & AI workloads for HPC customers. Affordable, sustainable and scalable."
     primary_button_text="Register Your Interest"
-    primary_button_url="http://devtest2:3000/sign-up"
+    primary_button_url="/contact"
     secondary_button_text="Learn More"
     secondary_button_url="/features"
     hero_image="/images/dashboard.png"

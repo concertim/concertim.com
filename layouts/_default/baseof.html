@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "en" }}" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Google Analytics -->
+    {{ partial "google-analytics" . }}
+    
+    <!-- Title -->
+    <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}">
+    <meta name="author" content="{{ .Site.Params.author | default .Site.Title }}">
+    <meta name="robots" content="{{ with .Params.robots }}{{ . }}{{ else }}index, follow{{ end }}">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="{{ "images/favicon.ico" | relURL }}">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{{ .Permalink }}">
+    
+    <!-- Main CSS -->
+    {{ $css := resources.Get "css/main.css" }}
+    {{ $css = $css | css.PostCSS }}
+    {{ if hugo.IsProduction }}
+        {{ $css = $css | minify | fingerprint | resources.PostProcess }}
+    {{ end }}
+    <link rel="stylesheet" href="{{ $css.RelPermalink }}">
+
+    <!-- Style CSS -->
+    {{ $css := resources.Get "css/style.css" }}
+    {{ $css = $css | css.PostCSS }}
+    {{ if hugo.IsProduction }}
+        {{ $css = $css | minify | fingerprint | resources.PostProcess }}
+    {{ end }}
+    <link rel="stylesheet" href="{{ $css.RelPermalink }}">
+
+    <!-- Additional Meta Tags from Front Matter -->
+    {{ with .Params.customMeta }}
+        {{ range . }}
+        <meta {{ range $key, $value := . }} {{ $key }}="{{ $value }}"{{ end }}>
+        {{ end }}
+    {{ end }}
+</head>
+<body class="min-h-screen flex flex-col">
+    <!-- Header -->
+    <div class="fixed top-0 left-0 right-0 z-50">
+        {{ partial "header" . }}
+    </div>
+
+    <!-- Main Content -->
+    <div class="pt-20">
+        {{ block "main" . }}{{ end }}
+    </div>
+
+    <!-- Footer -->
+    {{ partial "footer" . }}
+
+    <!-- Mobile Menu Script -->
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        if (mobileMenuButton) {
+            mobileMenuButton.addEventListener('click', function() {
+                const mobileMenu = document.getElementById('mobile-menu');
+                if (mobileMenu) {
+                    mobileMenu.classList.toggle('hidden');
+                }
+            });
+        }
+    </script>
+</body>
+</html>

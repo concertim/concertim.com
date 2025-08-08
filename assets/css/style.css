@@ -1,0 +1,87 @@
+/* Download fonts from https://fonts.google.com/specimen/Montserrat */
+/* Free for commercial use */
+@font-face {
+  font-family: 'montserrat-bold';
+  src: url('/fonts/Montserrat-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'montserrat';
+  src: url('/fonts/Montserrat-Medium.ttf') format('truetype');
+}
+
+html,
+:host,
+body, 
+h1, h2, h3, h4, h5, h6,
+.prose h1, .prose h2, .prose h3, .prose h4 {
+    font-family: 'montserrat', sans-serif;
+}
+
+/* Colours */
+/* Concertim Orange: #ff7401 */
+/* Darker Orange: #e56800 */
+/* Lighter Orange: #ff811a */
+/* Identified via https://www.color-hex.com/color/ff7401 */
+:root {
+    --concertim-orange: #ff7401;
+    --concertim-orange-dark: #e56800;
+    --concertim-orange-darker: #b25100;
+    --concertim-orange-light: #ff811a;
+    --concertim-orange-lighter: #ffab66;
+    --concertim-orange-lightest: #ffc799;
+}
+
+.bg-primary-600, .btn-primary {
+    background-color: var(--concertim-orange);
+}
+
+.hover\:bg-primary-700:hover, .btn-primary:hover {
+    background-color: var(--concertim-orange-dark);
+}
+
+.text-primary-600 {
+    color: var(--concertim-orange);
+}
+
+.hover\:text-primary-600:hover {
+    color: var(--concertim-orange-dark);
+}
+
+.hover\:border-primary-600:hover {
+    border-color: var(--concertim-orange);
+}
+
+.btn-outline {
+    border-color: var(--concertim-orange-dark);
+    color: var(--concertim-orange-dark);
+}
+
+.text-primary-100 {
+    color: white;
+}
+
+.text-blue-600 {
+    color: var(--concertim-orange);
+}
+
+.prose a {
+    color: var(--concertim-orange);
+}
+
+.prose a:hover {
+    color: var(--concertim-orange-dark);
+}
+
+.from-concertim-orange-lightest {
+    --tw-gradient-from: var(--concertim-orange-lightest) var(--tw-gradient-from-position);
+    --tw-gradient-to: rgb(239 246 255 / 0) var(--tw-gradient-to-position);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.via-concertim-orange-lightest {
+    --tw-gradient-to: rgb(239 246 255 / 0)  var(--tw-gradient-to-position);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--concertim-orange-lightest) var(--tw-gradient-via-position), var(--tw-gradient-to);
+}
+
+

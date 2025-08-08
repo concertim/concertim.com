@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "postcss": "^8.5.3"
+  },
+  "dependencies": {
+    "hugo-sassify-theme": "file:themes/hugo-saasify-theme"
+  }
+}

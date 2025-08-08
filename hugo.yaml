@@ -29,7 +29,7 @@ params:
     gradient_angle: 75
     primary_button:
       text: Register Your Interest
-      url: http://devtest2:3000/sign-up
+      url: /contact
     secondary_button:
       text: Learn More
       url: /features
@@ -56,12 +56,9 @@ params:
         hover_background: hover:bg-gray-50
         text_size: text-sm
     buttons:
-      signIn:
-        text: Sign in
-        url: http://devtest2:3000/users/sign-in
       getStarted:
         text: Register Interest
-        url: http://devtest2:3000/sign-up
+        url: /contact
   blog:
     enable: false
     title: Latest Articles
@@ -119,7 +116,7 @@ markup:
 menu:
   main:
     - name: Features
-      weight: 2
+      weight: 3
       params:
         has_submenu: true
         submenu:
@@ -136,6 +133,9 @@ menu:
     - name: About
       weight: 1
       url: /about/
+    - name: Subscriptions
+      weight: 2
+      url: /subscriptions/
   footer_column_1:
     - name: Resource & Cost Management Solutions
       url: /features/resource-cost-management-solutions/

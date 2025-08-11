@@ -21,62 +21,34 @@ title: Home
 >}}
 
 {{< feature
-    title="Resource & Cost Management Solutions"
-    description="A bird's-eye view of your estate, combining your entire HPC service into a single combined cost plus access to additional resources"
+    title="Streamlined Purchasing"
+    description="Deciding on hardware configurations can be a complex endeavour, ConcertIM seeks to simplify that by offering a build-your-own cluster process where you can design the solution you need by bringing together different Blocks of resources covering access, infrastructure, compute and storage. These Blocks are explaining clearly showing relative costs compared to performance metrics and carbon impact.<br><br>Discover Blocks for:"
     badge="Hardware"
     badgeColor="#ff7401"
-    image="/images/overview.png"
-    buttonText="Learn More"
-    buttonLink="/features/resource-cost-management-solutions/"
-    features="A birds-eye view of your estate, Straightforward price models for the base service and additional resources, A single combined cost for your entire HPC estate, Insights into your spending and carbon impact"
+    image="/images/blocks.png"
+    features="Compute & GPU resources,Data Storage with varying capacity and features,Access for your users to login and submit workloads from,Infrastructure providing system and service management"
     imagePosition="right"
 >}}
 
 {{< feature
-    title="Budgeting & Allocation Tools"
-    description="A unified interface for managing resource allocation to share your estate with teams and projects"
-    badge="Control"
-    badgeColor="#ff7401"
-    image="/images/team-budgets.png"
-    buttonText="Learn More"
-    buttonLink="/features/budgeting-allocation-tools/"
-    features="A unified interface for managing your entire HPC service, Resource allocation tools to fairly share your estate with your teams and projects, Budgeting and accounting tools to supervise your user groups your way"
-    imagePosition="left"
->}}
-
-{{< feature
-    title="Knowledge & Utilisation Sharing Tools for User Groups"
-    description="Team management tools for utilisation budgeting and knowledge sharing"
-    badge="Collaboration"
-    badgeColor="#ff7401"
-    image="/images/team-user-budgets.png"
-    buttonText="Learn More"
-    buttonLink="/features/knowledge-utilisation-sharing"
-    features="Management of team usage of their entitled resource share, Utilisation budgeting to ensure everyone on your team gets what they need, Insights into making the most of the available capacity"
-    imagePosition="right"
->}}
-
-{{< feature
-    title="A Platform for Your Workloads"
-    description="Quickstart virtual clusters with simple user access tools to reduce your time-to-science"
-    badge="Environments"
-    badgeColor="#ff7401"
-    image="/images/platform-workloads.png"
-    buttonText="Learn More"
-    buttonLink="/features/platform-for-workloads/"
-    features="Quickstart virtual clusters for popular HPC and AI workloads, Simple launching and user access tools, Reduced time-to-science"
-    imagePosition="left"
->}}
-
-{{< feature
-    title="HPC and AI workload Support & Expertise"
-    description="Access to expert knowledge and standardised environments with option for help tailored to suit your operational and workload requirements"
+    title="Flexible Support Offerings"
+    description="Your HPC service should be yours and our support offerings reflect that. You retain the control and collaborate with us on the areas you choose."
     badge="Support"
     badgeColor="#ff7401"
-    image="/images/support.png"
-    buttonText="Learn More"
-    buttonLink="/features/hpc-ai-support/"
-    features="Access to the Concertim support portal, Subscribe to packages for everything from daily operations to engineering service solutions, Optional help to suit your operational and workload requirements"
+    buttonText="See Our Support Offerings"
+    buttonLink="/subscriptions"
+    image="/images/support-offerings.png"
+    features="Non-intrusive hardware monitoring & repairs,Retain root user access,Collaborative environment configuration and evolution"
+    imagePosition="left"
+>}}
+
+{{< feature
+    title="Configurable Compute"
+    description="Modern HPC is changing, now there is a need for a solution that supports the latest workload environments and is capable of best handling AI. We deliver scalable infrastructure with compute resources that can be dynamically reallocated to different environments and workloads, letting your service evolve with your needs.<br><br>Create a shared facility that can provide:"
+    badge="Environment"
+    badgeColor="#ff7401"
+    image="/images/configurable-compute.png"
+    features="Traditional batch-scheduler controlled HPC,Interactive desktop environments for workload development,Container launching services,Time-share access for managing user access over weekly/monthly periods,All the above through a distributed on-demand or centralised service solution"
     imagePosition="right"
 >}}
 

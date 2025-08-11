@@ -9,7 +9,7 @@ title: Home
     primary_button_url="/contact"
     secondary_button_text="Learn More"
     secondary_button_url="/features"
-    hero_image="/images/dashboard.png"
+    hero_image="/images/build-your-service.png"
     gradient-from="#ffc799"
     gradient-to="#ffd5b2"
     gradient-angle="180"
@@ -22,7 +22,7 @@ title: Home
 
 {{< feature
     title="Streamlined Purchasing"
-    description="Deciding on hardware configurations can be a complex endeavour, ConcertIM seeks to simplify that by offering a build-your-own cluster process where you can design the solution you need by bringing together different Blocks of resources covering access, infrastructure, compute and storage. These Blocks are explaining clearly showing relative costs compared to performance metrics and carbon impact.<br><br>Discover Blocks for:"
+    description="Deciding on hardware configurations can be a complex endeavour, ConcertIM seeks to simplify that by offering a build-your-own cluster process where you can design the solution you need by bringing together different Blocks of resources covering access, infrastructure, compute and storage. These Blocks are clearly explained showing relative costs compared to performance metrics and carbon impact.<br><br>Discover Blocks for:"
     badge="Resources"
     badgeColor="#ff7401"
     image="/images/blocks.png"

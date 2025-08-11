@@ -23,7 +23,7 @@ title: Home
 {{< feature
     title="Streamlined Purchasing"
     description="Deciding on hardware configurations can be a complex endeavour, ConcertIM seeks to simplify that by offering a build-your-own cluster process where you can design the solution you need by bringing together different Blocks of resources covering access, infrastructure, compute and storage. These Blocks are explaining clearly showing relative costs compared to performance metrics and carbon impact.<br><br>Discover Blocks for:"
-    badge="Hardware"
+    badge="Resources"
     badgeColor="#ff7401"
     image="/images/blocks.png"
     features="Compute & GPU resources,Data Storage with varying capacity and features,Access for your users to login and submit workloads from,Infrastructure providing system and service management"

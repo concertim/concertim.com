@@ -1,4 +1,4 @@
-<div class="value-card bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+<div class="value-card {{ if .Get "colour" }}bg-{{ .Get "colour"}}{{ else }}bg-white{{ end }} p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
     <div class="mb-4">
         {{ $icon := .Get "icon"}}
         {{ $fa := printf "%s %s" "fas" $icon }}

@@ -10,6 +10,15 @@ cp themes/hugo-saasify-theme/tailwind.config.copy.js ./tailwind.config.js
 npm install
 ```
 
+Enabled mod support for icons:
+```
+hugo mod init github.com/concertim/website
+
+# added import and path for icons module to hugo.yaml
+
+hugo mod get -u
+```
+
 ## Dev
 
 - Run dev server on localhost (http://localhost:1313)

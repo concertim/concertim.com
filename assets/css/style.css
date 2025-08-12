@@ -92,3 +92,8 @@ h1, h2, h3, h4, h5, h6,
 b {
     color: var(--concertim-orange);
 }
+
+.icon {
+    fill: var(--concertim-orange);
+    height: 4rem;
+}

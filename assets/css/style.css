@@ -89,4 +89,6 @@ h1, h2, h3, h4, h5, h6,
     --tw-gradient-stops: var(--tw-gradient-from), var(--concertim-orange-lightest) var(--tw-gradient-via-position), var(--tw-gradient-to);
 }
 
-
+b {
+    color: var(--concertim-orange);
+}

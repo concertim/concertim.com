@@ -34,7 +34,6 @@ params:
       text: Learn More
       url: /subscriptions
   footer:
-    column_1_title: Features
     column_2_title: COMPANY
     column_3_title: LEGAL
   header:

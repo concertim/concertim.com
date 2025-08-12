@@ -21,8 +21,18 @@ title: Home
 >}}
 
 {{< feature
+    title="Solving Real Problems"
+    description="HPC & AI services are seeing increasing technical complexity to design, build and implement which can lead to <b>solutions being inefficient</b> and <b>poor value for money</b>. Traditional batch HPC is becoming outdated (affecting <b>security, compatibility and accessibility</b>), public cloud cannot meet cost & resource demands and HPC services are not being built with sustainability in mind.<br><br>At ConcertIM we aim to let you focus on solving real problems by:"
+    badge="Solution"
+    badgeColor="#ff7401"
+    image="/images/solutions.png"
+    features="Streamlining service delivery,Future-proofing your environment,Reducing carbon impact"
+    imagePosition="left"
+>}}
+
+{{< feature
     title="Streamlined Purchasing"
-    description="Deciding on hardware configurations can be a complex endeavour, ConcertIM seeks to simplify that by offering a build-your-own cluster process where you can design the solution you need by bringing together different Blocks of resources covering access, infrastructure, compute and storage. These Blocks are clearly explained showing relative costs compared to performance metrics and carbon impact.<br><br>Discover Blocks for:"
+    description="Deciding on hardware configurations can be a complex endeavour, ConcertIM seeks to simplify that by offering a <b>build-your-own cluster process</b> where you can design the solution you need by bringing together different Blocks of resources covering access, infrastructure, compute and storage. These Blocks are clearly explained showing relative costs compared to performance metrics and carbon impact.<br><br>Discover Blocks for:"
     badge="Resources"
     badgeColor="#ff7401"
     image="/images/blocks.png"
@@ -32,7 +42,7 @@ title: Home
 
 {{< feature
     title="Flexible Support Offerings"
-    description="Your HPC service should be yours and our support offerings reflect that. You retain the control and collaborate with us on the areas you choose."
+    description="Your HPC service should be yours and our support offerings reflect that. <b>You retain the control</b> and collaborate with us on the areas you choose."
     badge="Support"
     badgeColor="#ff7401"
     buttonText="See Our Support Offerings"
@@ -44,7 +54,7 @@ title: Home
 
 {{< feature
     title="Configurable Compute"
-    description="Modern HPC is changing, now there is a need for a solution that supports the latest workload environments and is capable of best handling AI. We deliver scalable infrastructure with compute resources that can be dynamically reallocated to different environments and workloads, letting your service evolve with your needs.<br><br>Create a shared facility that can provide:"
+    description="Modern HPC is changing, now there is a need for a solution that supports the latest workload environments and is capable of <b>best handling AI</b>. We deliver <b>scalable infrastructure</b> with compute resources that can be dynamically reallocated to different environments and workloads, letting your service evolve with your needs.<br><br>Create a shared facility that can provide:"
     badge="Environment"
     badgeColor="#ff7401"
     image="/images/configurable-compute.png"

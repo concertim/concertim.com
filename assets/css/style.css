@@ -36,6 +36,10 @@ h1, h2, h3, h4, h5, h6,
     background-color: var(--concertim-orange);
 }
 
+.bg-primary-50 {
+    background-color: var(--concertim-orange-lightest);
+}
+
 .hover\:bg-primary-700:hover, .btn-primary:hover {
     background-color: var(--concertim-orange-dark);
 }
@@ -80,7 +84,6 @@ h1, h2, h3, h4, h5, h6,
 
 .from-concertim-orange-lightest {
     --tw-gradient-from: var(--concertim-orange-lightest) var(--tw-gradient-from-position);
-    --tw-gradient-to: rgb(239 246 255 / 0) var(--tw-gradient-to-position);
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 

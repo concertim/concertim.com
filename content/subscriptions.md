@@ -6,7 +6,7 @@ layout: "pricing"
 {{< pricing-table-1 >}}
 {
     "title": "Various levels of engagement to empower your HPC service",
-    "description": "At ConcertIM we are ready to meet your specific needs to deliver your HPC service",
+    "description": "At ConcertIM we are ready to meet your specific needs to deliver your HPC service. We deliver our support to you via a subscription model so you are free to cancel anytime and change your level of support as suits you.",
     "plans": [
         {
             "name": "Level 1",

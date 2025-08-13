@@ -117,8 +117,11 @@ markup:
 menu:
   main:
     - name: About
-      weight: 1
+      weight: 3
       url: /about/
+    - name: Why ConcertIM?
+      weight: 1
+      url: /why-concertim/
     - name: Subscriptions
       weight: 2
       url: /subscriptions/

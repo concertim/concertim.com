@@ -3,45 +3,76 @@ title: "Support Subscriptions"
 description: "Choose the support level that fits your needs"
 layout: "pricing"
 ---
+
+<div class="py-10">
+<h2 class="text-3xl text-center">Various Levels of Engagement to Empower Your HPC Service</h2>
+<p class="text-xl text-center mt-4">At ConcertIM we are ready to meet your specific needs to deliver your HPC service. We deliver our support to you via a subscription model so you are free to cancel anytime and change your level of support as suits you.</p>
+<p class="text-xl text-center mt-4"><i>Select a subscription type below to find out more about the levels of subscription offered within it.</i></p>
+</div>
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+  <div class="w-full text-center" onclick="showSupport(event, 'passive')"><p class="tablink text-center border-bottom-primary-600 text-2xl">Passive</p></div>
+  <div class="w-full text-center" onclick="showSupport(event, 'active')"><p class="tablink text-center border-bottom-grey text-2xl">Active</p></div>
+</div>
+
+<script>
+function showSupport(evt, supportType) {
+  var i;
+  var x = document.getElementsByClassName("support-type");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" border-bottom-primary-600", " border-bottom-grey");
+  }
+  document.getElementById(supportType).style.display = "block";
+  evt.currentTarget.firstElementChild.className = evt.currentTarget.firstElementChild.className.replace(" border-bottom-grey", " border-bottom-primary-600");
+}
+</script>
+
+<div id="passive" class="support-type">
 {{< pricing-table-1 >}}
 {
-    "title": "Various levels of engagement to empower your HPC service",
-    "description": "At ConcertIM we are ready to meet your specific needs to deliver your HPC service. We deliver our support to you via a subscription model so you are free to cancel anytime and change your level of support as suits you.",
+    "title": "Passive HPC Service Subscription",
+    "description": "Our <b>passive subscriptions</b> put you in the driving seat. You have <b>control over your service</b> and it's evolution while we keep an eye on things and can step in to help whenever you want us to.",
     "plans": [
         {
-            "name": "Level 1",
+            "name": "Operations",
             "price": "£",
             "description": "Peace of mind about your resources",
             "features": [
-                "Hardware Break/Fix",
-                "Hardware Diagnostics",
-                "Root Access"
+                "Hardware Issue Notifications",
+                "Support with Hardware Repair if Requested",
+                "Root Access & Full Environment Control"
             ]
         },
         {
-            "name": "Level 2",
+            "name": "Engineering",
             "price": "££",
             "description": "Collaborate on your HPC service",
             "features": [
-                "Hardware Break/Fix",
-                "Hardware Diagnostics",
-                "Root Access",
-                "Environment Monitoring",
+                "Hardware Issue Notifications",
+                "Support with Hardware Repair if Requested",
+                "Root Access & Full Environment Control",
                 "Environment Modification Training",
-                "Service Analysis & Optimisation Tips"
+                "Environment Change Control Certification",
+                "Example Deployments"
             ]
         },
         {
-            "name": "Level 3",
+            "name": "Specialist",
             "price": "£££",
             "description": "Hands-on assistance with architecting your service",
             "features": [
-                "Hardware Break/Fix",
-                "Hardware Diagnostics",
-                "Environment Monitoring",
-                "Environment Modification Assistance",
-                "Service Analysis & Optimisation Tips",
-                "Consultancy"
+                "Hardware Issue Notifications",
+                "Support with Hardware Repair if Requested",
+                "Root Access & Full Environment Control",
+                "Environment Modification Training",
+                "Environment Change Control Certification",
+                "Example Deployments",
+                "Environment Diagnostics",
+                "Hourly-rate Specialist Environment Assistance"
             ]
         }
     ]
@@ -50,22 +81,91 @@ layout: "pricing"
 
 {{< faq >}}
 {
-    "title": "Common Questions",
-    "description": "Find answers to frequently asked questions about our support subscriptions.",
+    "title": "Passive Support FAQs",
+    "description": "Find answers to frequently asked questions about our passive support subscriptions.",
     "questions": [
         {
-            "question": "What is a Level 1 subscription?",
-            "answer": "With L1 support you get our least-intrusive managed service solution. We will monitor your hardware for signs of degradation as well as provide assistance with diagnosing suspected hardware issues affecting your HPC service. We don't get access to your HPC environment OS unless you activate the diagnostic process."
+            "question": "How does a Passive Operations Subscription work?",
+            "answer": "With a Passive Operations Subscription you get our least-intrusive service solution. We will monitor your hardware for signs of degradation as well as provide assistance with diagnosing suspected hardware issues affecting your HPC service. We don't get access to your HPC environment OS unless you activate the diagnostic process."
         },
         {
-            "question": "What is a Level 2 subscription?",
-            "answer": "With L2 support you get everything in L1 and collaborate with us to deliver your HPC service. A base HPC environment is provided and we will train you fully in performing change management to the compute system. We have access to your HPC environment and use this for delivering essential services, monitoring for environment degradation and assisting with diagnosing suspected issues with your service that could be caused by base environment modifications/configuration."
+            "question": "How does a Passive Engineering Subscription work?",
+            "answer": "With a Passive Engineering Subscription you get everything in Passive Operations and collaborate with us to deliver your HPC service. A base HPC environment is provided and we will train you fully in performing change management to the compute system. We have limited access to your HPC environment and use this for delivering essential services, monitoring for environment degradation and assisting with diagnosing suspected issues with your service that could be caused by base environment modifications/configuration. With example deployments we provide interactive references for experimenting with service changes."
         },
         {
-            "question": "What is a Level 3 subscription?",
-            "answer": "With L3 support you get everything in L2 and change control performed by us, reducing the technical burden of evolving the service. We have access to your HPC environment and restrict the root-level changes that can be made to ensure that we can guarantee a high quality service at all times."
+            "question": "How does a Passive Specialist Subscription work?",
+            "answer": "With a Passive Specialist Subscription you get everything in Passive Engineering and access to further bespoke support options, reducing the technical burden of evolving the service. We will require access to your HPC environment when you engage with us for support which is charged at an hourly rate."
         }
     ]
 }
 {{< /faq >}}
+
+</div>
+
+<div id="active" class="support-type" style="display: none">
+{{< pricing-table-1 >}}
+{
+    "title": "Active HPC Service Subscription",
+    "description": "Our <b>active subscriptions</b> streamline you service delivery. By engaging with a ConcertIM-designed solution you have <b>peace-of-mind</b> knowing that our tried-and-tested methodologies and architecture will <b>stand the test of time</b>.",
+    "plans": [
+        {
+            "name": "Operations",
+            "price": "£",
+            "description": "Base-level service gurantee",
+            "features": [
+              "Proactice Hardware Repair",
+              "Hardware Diagnostics",
+              "Service Health Reporting"
+            ]
+        },
+        {
+            "name": "Engineering",
+            "price": "££",
+            "description": "Full-stack service functionality",
+            "features": [
+              "Proactive Hardwware Repair",
+              "Hardware Diagnostics",
+              "Service Health Reporting",
+              "Workflow Analysis",
+              "Advanced Proactive Diagnostics & Recommendations"
+            ]
+        },
+        {
+            "name": "Specialist",
+            "price": "£££",
+            "description": "Bespoke service solutions",
+            "features": [
+              "Hardwware Break/Fix",
+              "Hardware Diagnostics",
+              "Service Health Reporting",
+              "Workflow Analysis",
+              "Advanced Diagnostics & Recommendations",
+              "Cost-Scoped Specialist Environment Assistance"
+            ]
+        }
+    ]
+}
+{{< /pricing-table-1 >}}
+
+{{< faq >}}
+{
+    "title": "Active Subscription FAQs",
+    "description": "Find answers to frequently asked questions about our active support subscriptions.",
+    "questions": [
+        {
+            "question": "How does an Active Operations Subscription work?",
+            "answer": "With an Active Operations Subscription we monitor your hardware and environment for signs of degradation and automatically respond to alerts to ensure minimal downtime and service disruption. Each month we'll deliver reports detailing our hardware & service diagnostics. We guarantee a base-level of functionality for both your hardware and your service."
+        },
+        {
+            "question": "How does an Active Engineering Subscription work?",
+            "answer": "With an Active Engineering Subscription you get everything in Active Operations and we'll also provide assistance with workflow analysis and environment delivery. Helping to build the environment that your users need with standardised solutions to complex problems."
+        },
+        {
+            "question": "How does an Active Specialist Subscription work?",
+            "answer": "With an Active Specialist Subscription you get everything in Active Engineering and access to bespoke support options, reducing the technical burden of evolving the service. All bespoke solutions are delivered through scoped statements of work giving a guaranteed cost for making changes to your service."
+        }
+    ]
+}
+{{< /faq >}}
+</div>
 

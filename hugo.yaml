@@ -1,6 +1,6 @@
 baseURL: https://concertim.com/
 languageCode: en-gb
-#title: Concertim
+title: ConcertIM
 theme: hugo-saasify-theme
 
 # Required Features

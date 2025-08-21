@@ -36,7 +36,7 @@ h1, h2, h3, h4, h5, h6,
     background-color: var(--concertim-orange);
 }
 
-.bg-primary-50 {
+.bg-primary-50, .hover\:bg-primary-50:hover {
     background-color: var(--concertim-orange-lightest);
 }
 
@@ -64,6 +64,14 @@ h1, h2, h3, h4, h5, h6,
 .btn-outline {
     border-color: var(--concertim-orange-dark);
     color: var(--concertim-orange-dark);
+}
+
+.border-bottom-primary-600 {
+    border-bottom: 3px solid var(--concertim-orange);
+}
+
+.border-bottom-grey {
+    border-bottom: 3px solid gray;
 }
 
 .text-primary-100 {
@@ -100,3 +108,4 @@ b {
     fill: var(--concertim-orange);
     height: 4rem;
 }
+

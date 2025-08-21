@@ -43,8 +43,15 @@ function showSupport(evt, supportType) {
             "description": "Peace of mind about your resources",
             "features": [
                 "Hardware Issue Notifications",
-                "Support with Hardware Repair if Requested",
-                "Root Access & Full Environment Control"
+                "Support with Hardware Repair",
+                "Root Access",
+                "Full Environment Control",
+                "Certified Hardware States"
+            ],
+            "altname": "Active Subscription",
+            "altfeatures": [
+                "Proactive Hardware Repair",
+                "Service Health Reporting"
             ]
         },
         {
@@ -52,12 +59,14 @@ function showSupport(evt, supportType) {
             "price": "££",
             "description": "Collaborate on your HPC service",
             "features": [
-                "Hardware Issue Notifications",
-                "Support with Hardware Repair if Requested",
-                "Root Access & Full Environment Control",
+                "Certified Hardware & Software States",
                 "Environment Modification Training",
-                "Environment Change Control Certification",
                 "Example Deployments"
+            ],
+            "altname": "Active Subscription",
+            "altfeatures": [
+                "Workflow Analysis",
+                "Advanced Proactive Diagnostics"
             ]
         },
         {
@@ -65,14 +74,12 @@ function showSupport(evt, supportType) {
             "price": "£££",
             "description": "Hands-on assistance with architecting your service",
             "features": [
-                "Hardware Issue Notifications",
-                "Support with Hardware Repair if Requested",
-                "Root Access & Full Environment Control",
-                "Environment Modification Training",
-                "Environment Change Control Certification",
-                "Example Deployments",
                 "Environment Diagnostics",
-                "Hourly-rate Specialist Environment Assistance"
+                "Hourly-rate Specialist Assistance"
+            ],
+            "altname": "Active Subscription",
+            "altfeatures": [
+                "Cost-Scoped Specialist Assistance"
             ]
         }
     ]
@@ -90,11 +97,11 @@ function showSupport(evt, supportType) {
         },
         {
             "question": "How does a Passive Engineering Subscription work?",
-            "answer": "With a Passive Engineering Subscription you get everything in Passive Operations and collaborate with us to deliver your HPC service. A base HPC environment is provided and we will train you fully in performing change management to the compute system. We have limited access to your HPC environment and use this for delivering essential services, monitoring for environment degradation and assisting with diagnosing suspected issues with your service that could be caused by base environment modifications/configuration. With example deployments we provide interactive references for experimenting with service changes."
+            "answer": "With a Passive Engineering Subscription you collaborate with us to deliver your HPC service. A base HPC environment is provided and we will train you fully in performing change management to the compute system. We have limited access to your HPC environment and use this for delivering essential services, monitoring for environment degradation and assisting with diagnosing suspected issues with your service that could be caused by base environment modifications/configuration. With example deployments we provide interactive references for experimenting with service changes."
         },
         {
             "question": "How does a Passive Specialist Subscription work?",
-            "answer": "With a Passive Specialist Subscription you get everything in Passive Engineering and access to further bespoke support options, reducing the technical burden of evolving the service. We will require access to your HPC environment when you engage with us for support which is charged at an hourly rate."
+            "answer": "With a Passive Specialist Subscription you get access to bespoke support options, reducing the technical burden of evolving the service. We will require access to your HPC environment when you engage with us for support which is charged at an hourly rate."
         }
     ]
 }
@@ -115,7 +122,13 @@ function showSupport(evt, supportType) {
             "features": [
               "Proactice Hardware Repair",
               "Hardware Diagnostics",
+              "Base Environment Delivery",
               "Service Health Reporting"
+            ],
+            "altname": "Passive Subscription",
+            "altfeatures": [
+                "Root Access",
+                "Hardware & Environment Control"
             ]
         },
         {
@@ -123,11 +136,18 @@ function showSupport(evt, supportType) {
             "price": "££",
             "description": "Full-stack service functionality",
             "features": [
-              "Proactive Hardwware Repair",
+              "Proactive Hardware Repair",
               "Hardware Diagnostics",
               "Service Health Reporting",
               "Workflow Analysis",
               "Advanced Proactive Diagnostics & Recommendations"
+            ],
+            "altname": "Passive Subscription",
+            "altfeatures": [
+                "Root Access",
+                "Hardware & Environment Control",
+                "Environment Modification Training",
+                "Environment Diagnostics"
             ]
         },
         {
@@ -135,12 +155,18 @@ function showSupport(evt, supportType) {
             "price": "£££",
             "description": "Bespoke service solutions",
             "features": [
-              "Hardwware Break/Fix",
+              "Proactive Hardware Repair",
               "Hardware Diagnostics",
               "Service Health Reporting",
               "Workflow Analysis",
               "Advanced Diagnostics & Recommendations",
               "Cost-Scoped Specialist Environment Assistance"
+            ],
+            "altname": "Passive Subscription",
+            "altfeatures": [
+                "Root Access",
+                "Hardware & Environment Control",
+                "Hourly-rate Specialist Assistance"
             ]
         }
     ]

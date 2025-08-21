@@ -36,6 +36,17 @@
                                 </li>
                                 {{ end }}
                             </ul>
+                            <div class="mt-6 mb-2"><p class="text-2xl tracking-tight">Available in {{ .altname }}:</p></div>
+                            <ul class="space-y-4 text-gray-600 flex-grow">
+                                {{ range .altfeatures }}
+                                <li class="flex items-start">
+                                    <svg class="h-6 w-6 flex-shrink-0 text-blue-500" fill="currentColor" viewbox="0 0 24 24">
+                                        <circle r="8" cx="12" cy="12" stroke="currentColor" stroke-width="6"/>
+                                    </svg>
+                                    <span class="ml-3">{{ . }}</span>
+                                </li>
+                                {{ end }}
+                            </ul>
                             <div class="mt-8 mb-8">
                                 <p class="flex items-baseline">
                                     <span class="text-5xl font-bold tracking-tight text-gray-900">{{ .price }}</span>
@@ -57,3 +68,4 @@
         </div>
     </div>
 </section>
+{{ partial "icon-data" . }}

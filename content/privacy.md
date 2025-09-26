@@ -5,11 +5,11 @@ layout: "simple"
 draft: false
 ---
 
-**Alces Flight is committed to ensuring that your privacy is protected. Should we ask you to provide certain information by which you can be identified when using this website, then you can be assured that it will only be used in accordance with this privacy statement.**
+**ConcertIM is committed to ensuring that your privacy is protected. Should we ask you to provide certain information by which you can be identified when using this website, then you can be assured that it will only be used in accordance with this privacy statement.**
 
-This privacy policy sets out how Alces Flight uses and protects any information that you give Alces Flight when you use this website.
+This privacy policy sets out how ConcertIM uses and protects any information that you give ConcertIM when you use this website.
 
-Alces Flight may change this policy from time to time by updating this page. You should check this page from time to time to ensure that you are happy with any changes.
+ConcertIM may change this policy from time to time by updating this page. You should check this page from time to time to ensure that you are happy with any changes.
 
 ## What we collect
 
@@ -67,7 +67,7 @@ Our website may contain links to other websites of interest. However, once you h
 You may choose to restrict the collection or use of your personal information in the following ways:
 
 - When you are asked to fill in a form on the website, you may be presented with a box that you can click to indicate that you would like to be contacted for direct marketing purposes. If you do not want anybody to contact you for direct marketing purposes, do not click the box.
-- If you have previously agreed to us using your personal information for direct marketing purposes, you may change your mind at any time writing to us at the address below, emailing us at info@alces-flight.com, or phoning us at the number below.
+- If you have previously agreed to us using your personal information for direct marketing purposes, you may change your mind at any time writing to us at the address below, emailing us at info@concertim.com, or phoning us at the number below.
 
 We will not sell, distribute or lease your personal information to third parties unless we have your permission or are required by law to do so. We may use your personal information to send you promotional information about third parties which we think you may find interesting if you tell us that you wish this to happen.
 

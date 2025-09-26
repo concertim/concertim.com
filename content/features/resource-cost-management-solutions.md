@@ -14,7 +14,7 @@ demo:
   description: A bird's-eye view of your estate, combining your entire HPC service into a single combined cost plus access to additional resources
   image: /images/overview.png
 ---
-Concertim provides an affordable overview of your computing resources that make up your HPC estate. Additionally it provides access to Public & Private Cloud compute resources, including Alces Cloud - a cloud of computing resources built for HPC, no hidden-fee, guaranteed performance levels and direct access to the servers you rent.
+ConcertIM provides an affordable overview of your computing resources that make up your HPC estate. Additionally it provides access to Public & Private Cloud compute resources, including Alces Cloud - a cloud of computing resources built for HPC, no hidden-fee, guaranteed performance levels and direct access to the servers you rent.
 
 Beyond the resources is a powerful interface that brings together all of the elements of your HPC service into a management interface that shows what you have, what it costs and how it impacts the planet along with tips to improve service effectiveness and efficiency.
 

@@ -8,7 +8,7 @@ title: Home
     primary_button_text="Register Your Interest"
     primary_button_url="/contact"
     secondary_button_text="Learn More"
-    secondary_button_url="/features"
+    secondary_button_url="/subscriptions"
     hero_image="/images/build-your-service.png"
     gradient-from="#ffc799"
     gradient-to="#ffd5b2"

@@ -14,7 +14,7 @@ demo:
   description: A unified interface for managing resource allocation to share your estate with teams and projects
   image: /images/team-budgets.png
 ---
-Concertim enables you to combine your entire HPC estate into a single interface from which you can manage how your resources are shared and accounted for amongst your Teams, Projects and Users. 
+ConcertIM enables you to combine your entire HPC estate into a single interface from which you can manage how your resources are shared and accounted for amongst your Teams, Projects and Users. 
 
 Utilise a variety of tools to set budgets, utilisation limits and ultimately be able to breakdown costs across your organisation as best suits you.
 

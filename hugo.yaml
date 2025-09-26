@@ -18,7 +18,7 @@ taxonomies:
   tag: tags
 params:
   description: ""
-  author: Concertim Team
+  author: ConcertIM Team
   logo: /images/cIM_Icon_01.png
   cta:
     enable: true

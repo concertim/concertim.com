@@ -29,7 +29,7 @@ Our service provides something for everyone at your organisation. Whether you ar
 - Reduced time-to-science
 
 [HPC and AI Workload Support & Expertise](/features/hpc-ai-support/):
-- Access to the Alces Flight support portal 
+- Access to the ConcertIM support portal 
 - Subscribe to packages for everything from daily operations to engineering service solutions
 - Optional help to suit your operational and workload requirements 
 

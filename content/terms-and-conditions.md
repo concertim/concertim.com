@@ -5,17 +5,17 @@ layout: "simple"
 draft: false
 ---
 
-**If you continue to browse and use this website, you are agreeing to comply with and be bound by the following terms and conditions of use which, together with our [privacy policy](/privacy), govern Alces Flight’s relationship with you in relation to this website. If you disagree with any part of these terms and conditions, please do not use our website.**
+**If you continue to browse and use this website, you are agreeing to comply with and be bound by the following terms and conditions of use which, together with our [privacy policy](/privacy), govern ConcertIM's relationship with you in relation to this website. If you disagree with any part of these terms and conditions, please do not use our website.**
 
 This page (taken with the documents and pages it refers to) tells you the terms of use which you agree to when you use this service.
 
-The term ‘Alces Flight’ or ‘us’ or ‘we’ refers to the owner of the website whose registered office is:
+The term ‘ConcertIM’ or ‘us’ or ‘we’ refers to the owner of the website whose registered office is:
 4 Murdock Road
 Bicester
 Oxfordshire
 OX26 4PP
 
-Our company registration number is 10095215 (England and Wales). The term ‘you’ refers to the user or viewer of our website.
+Our company registration number is 10095215 (England and Wales). The term 'you' refers to the user or viewer of our website.
 
 The use of this website is subject to the following terms of use:
 
@@ -28,4 +28,4 @@ The use of this website is subject to the following terms of use:
 1. From time to time this website may also include links to other websites. These links are provided for your convenience to provide further information. They do not signify that we endorse the website(s). We have no responsibility for the content of the linked website(s).
 1. Your use of this website and any dispute arising out of such use of the website is subject to the laws of England, Northern Ireland, Scotland and Wales.
 
-Your use of this website shall be entirely at your own risk. Alces Flight Limited, its affiliated companies and their representatives will not be responsible in any manner for any harm, loss or damage, however caused, arising out of your use of this website, including direct, indirect, special, third party or consequential damages. We will not be responsible for any detrimental reliance that you may place upon the website or its contents.
+Your use of this website shall be entirely at your own risk. ConcertIM Limited, its affiliated companies and their representatives will not be responsible in any manner for any harm, loss or damage, however caused, arising out of your use of this website, including direct, indirect, special, third party or consequential damages. We will not be responsible for any detrimental reliance that you may place upon the website or its contents.

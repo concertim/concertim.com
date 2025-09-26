@@ -14,6 +14,6 @@ demo:
   description: 'Quickstart virtual clusters with simple user access tools to reduce your time-to-science'
   image: /images/platform-workloads.png
 ---
-Concertim provides cloud computing resources that are tried and tested for a variety of HPC applications, from OpenFOAM and NAMD to  Tensorflow and Hadoop, offering guaranteed performance and technical peace of mind.
+ConcertIM provides cloud computing resources that are tried and tested for a variety of HPC applications, from OpenFOAM and NAMD to  Tensorflow and Hadoop, offering guaranteed performance and technical peace of mind.
 
 Included in the subscription is a warehouse of virtual clusters for many application ecosystems, reducing your time-to-science.

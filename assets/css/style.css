@@ -19,7 +19,7 @@ h1, h2, h3, h4, h5, h6,
 }
 
 /* Colours */
-/* Concertim Orange: #ff7401 */
+/* ConcertIM Orange: #ff7401 */
 /* Darker Orange: #e56800 */
 /* Lighter Orange: #ff811a */
 /* Identified via https://www.color-hex.com/color/ff7401 */
@@ -36,6 +36,10 @@ h1, h2, h3, h4, h5, h6,
     background-color: var(--concertim-orange);
 }
 
+.bg-primary-50, .hover\:bg-primary-50:hover {
+    background-color: var(--concertim-orange-lightest);
+}
+
 .hover\:bg-primary-700:hover, .btn-primary:hover {
     background-color: var(--concertim-orange-dark);
 }
@@ -48,8 +52,13 @@ h1, h2, h3, h4, h5, h6,
     color: var(--concertim-orange-dark);
 }
 
-.hover\:border-primary-600:hover {
+.hover\:border-primary-600:hover, .focus\:border-primary-500:focus {
     border-color: var(--concertim-orange);
+}
+
+.focus\:ring-primary-500:focus, .focus\:ring-2:focus {
+    border-color: var(--concertim-orange);
+    --tw-ring-color: rgb(var(--concertim-orange) / var(--tw-ring-opacity, 1));
 }
 
 .btn-outline {
@@ -57,25 +66,32 @@ h1, h2, h3, h4, h5, h6,
     color: var(--concertim-orange-dark);
 }
 
+.border-bottom-primary-600 {
+    border-bottom: 3px solid var(--concertim-orange);
+}
+
+.border-bottom-grey {
+    border-bottom: 3px solid gray;
+}
+
 .text-primary-100 {
     color: white;
 }
 
-.text-blue-600 {
+.text-blue-600, .text-blue-500 {
     color: var(--concertim-orange);
 }
 
-.prose a {
+.prose a, .feature-item a {
     color: var(--concertim-orange);
 }
 
-.prose a:hover {
+.prose a:hover, .feature-item a:hover {
     color: var(--concertim-orange-dark);
 }
 
 .from-concertim-orange-lightest {
     --tw-gradient-from: var(--concertim-orange-lightest) var(--tw-gradient-from-position);
-    --tw-gradient-to: rgb(239 246 255 / 0) var(--tw-gradient-to-position);
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
@@ -84,4 +100,12 @@ h1, h2, h3, h4, h5, h6,
     --tw-gradient-stops: var(--tw-gradient-from), var(--concertim-orange-lightest) var(--tw-gradient-via-position), var(--tw-gradient-to);
 }
 
+b {
+    color: var(--concertim-orange);
+}
+
+.icon {
+    fill: var(--concertim-orange);
+    height: 4rem;
+}
 

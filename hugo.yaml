@@ -1,6 +1,6 @@
-baseURL: https://www.staging.concertim.com/
+baseURL: https://concertim.com/
 languageCode: en-gb
-#title: Concertim
+title: ConcertIM
 theme: hugo-saasify-theme
 
 # Required Features
@@ -18,7 +18,7 @@ taxonomies:
   tag: tags
 params:
   description: ""
-  author: Concertim Team
+  author: ConcertIM Team
   logo: /images/cIM_Icon_01.png
   cta:
     enable: true
@@ -29,12 +29,11 @@ params:
     gradient_angle: 75
     primary_button:
       text: Register Your Interest
-      url: http://devtest2:3000/sign-up
+      url: /contact
     secondary_button:
       text: Learn More
-      url: /features
+      url: /subscriptions
   footer:
-    column_1_title: Features
     column_2_title: COMPANY
     column_3_title: LEGAL
   header:
@@ -56,12 +55,9 @@ params:
         hover_background: hover:bg-gray-50
         text_size: text-sm
     buttons:
-      signIn:
-        text: Sign in
-        url: http://devtest2:3000/users/sign-in
       getStarted:
         text: Register Interest
-        url: http://devtest2:3000/sign-up
+        url: /contact
   blog:
     enable: false
     title: Latest Articles
@@ -93,6 +89,8 @@ module:
   hugoVersion:
     extended: true
     min: 0.80.0
+  imports:
+    - path: github.com/hugo-mods/icons
 build:
   writeStats: true
   buildStats:
@@ -118,35 +116,15 @@ markup:
     startLevel: 2
 menu:
   main:
-    - name: Features
-      weight: 2
-      params:
-        has_submenu: true
-        submenu:
-          - name: Resource & Cost Management Solutions
-            url: /features/resource-cost-management-solutions/
-          - name: Budgeting & Allocation Tools
-            url: /features/budgeting-allocation-tools/
-          - name: Knowledge & Utilisation Sharing
-            url: /features/knowledge-utilisation-sharing/
-          - name: Platform for Workloads
-            url: /features/platform-for-workloads/
-          - name: Support & Expertise
-            url: /features/hpc-ai-support/
     - name: About
-      weight: 1
+      weight: 3
       url: /about/
-  footer_column_1:
-    - name: Resource & Cost Management Solutions
-      url: /features/resource-cost-management-solutions/
-    - name: Budgeting & Allocation Tools
-      url: /features/budgeting-allocation-tools/
-    - name: Knowledge & Utilisation Sharing
-      url: /features/knowledge-utilisation-sharing/
-    - name: Platform for Workloads
-      url: /features/platform-for-workloads/
-    - name: Support & Expertise
-      url: /features/hpc-ai-support/
+    - name: Why ConcertIM?
+      weight: 1
+      url: /why-concertim/
+    - name: Subscriptions
+      weight: 2
+      url: /subscriptions/
   footer_column_2:
     - name: About Us
       url: /about

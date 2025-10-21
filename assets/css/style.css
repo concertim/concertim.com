@@ -82,11 +82,11 @@ h1, h2, h3, h4, h5, h6,
     color: var(--concertim-orange);
 }
 
-.prose a {
+.prose a, .feature-item a {
     color: var(--concertim-orange);
 }
 
-.prose a:hover {
+.prose a:hover, .feature-item a:hover {
     color: var(--concertim-orange-dark);
 }
 

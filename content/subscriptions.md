@@ -11,8 +11,8 @@ layout: "pricing"
 </div>
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-  <div class="w-full text-center" onclick="showSupport(event, 'passive')"><p class="tablink text-center border-bottom-primary-600 text-2xl">Passive</p></div>
-  <div class="w-full text-center" onclick="showSupport(event, 'active')"><p class="tablink text-center border-bottom-grey text-2xl">Active</p></div>
+  <div class="w-full text-center" onclick="showSupport(event, 'passive')"><p class="w-full cursor-pointer tablink text-center btn-primary text-2xl">Passive</p></div>
+  <div class="w-full text-center" onclick="showSupport(event, 'active')"><p class="w-full cursor-pointer tablink text-center btn-outline text-2xl">Active</p></div>
 </div>
 
 <script>
@@ -24,10 +24,10 @@ function showSupport(evt, supportType) {
   }
   tablinks = document.getElementsByClassName("tablink");
   for (i = 0; i < x.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" border-bottom-primary-600", " border-bottom-grey");
+    tablinks[i].className = tablinks[i].className.replace(" btn-primary", " btn-outline");
   }
   document.getElementById(supportType).style.display = "block";
-  evt.currentTarget.firstElementChild.className = evt.currentTarget.firstElementChild.className.replace(" border-bottom-grey", " border-bottom-primary-600");
+  evt.currentTarget.firstElementChild.className = evt.currentTarget.firstElementChild.className.replace(" btn-outline", " btn-primary");
 }
 </script>
 
@@ -120,7 +120,7 @@ function showSupport(evt, supportType) {
             "price": "£",
             "description": "Base-level service gurantee",
             "features": [
-              "Proactice Hardware Repair",
+              "[Proactive Hardware Repair](/subscriptions/active/proactive-hardware-repair)",
               "Hardware Diagnostics",
               "Base Environment Delivery",
               "Service Health Reporting"

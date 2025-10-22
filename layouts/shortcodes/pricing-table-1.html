@@ -1,4 +1,15 @@
 {{ $json := .Inner | transform.Unmarshal }}
+<script>
+function showInfo(infoBoxId) {
+    var i;
+    var x = document.getElementsByClassName("more-info");
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    document.getElementById(infoBoxId).style.display = "block";
+}
+</script>
+
 <section class="py-16 bg-white">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {{ with $json.title }}
@@ -13,6 +24,7 @@
         <div class="mt-16">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {{ range $json.plans }}
+                {{ $scope := .name }}
                 <div class="w-full">
                     <div class="h-full flex flex-col rounded-2xl border border-gray-200 bg-white shadow-sm hover:shadow-lg transition-shadow duration-300 relative">
                         {{ if .featured }}
@@ -32,8 +44,9 @@
                                     <svg class="h-6 w-6 flex-shrink-0 text-blue-500" fill="currentColor" viewBox="0 0 24 24">
                                         <path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/>
                                     </svg>
-                                    <span class="ml-3 feature-item">{{ . |markdownify }}</span>
+                                    <span class="ml-3 feature-item cursor-pointer" onclick="showInfo('info-{{ $scope | urlize }}-{{ .feature | urlize }}')">{{ .feature }}</span>
                                 </li>
+                                <div class="more-info" id="info-{{ $scope | urlize }}-{{ .feature | urlize }}">{{ .info | markdownify }}</div>
                                 {{ end }}
                             </ul>
                             <div class="mt-12 mb-2"><p class="text-2xl tracking-tight">Available in {{ .altname }}:</p></div>

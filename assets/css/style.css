@@ -82,11 +82,20 @@ h1, h2, h3, h4, h5, h6,
     color: var(--concertim-orange);
 }
 
-.prose a, .feature-item a {
+.feature-item {
+  text-decoration: underline dotted;
+}
+
+.more-info {
+    display: none;
+    font-size: small;
+}
+
+.prose a {
     color: var(--concertim-orange);
 }
 
-.prose a:hover, .feature-item a:hover {
+.prose a:hover {
     color: var(--concertim-orange-dark);
 }
 

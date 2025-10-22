@@ -35,18 +35,33 @@ function showSupport(evt, supportType) {
 {{< pricing-table-1 >}}
 {
     "title": "Passive HPC Service Subscription",
-    "description": "Our <b>passive subscriptions</b> put you in the driving seat. You have <b>control over your service</b> and it's evolution while we keep an eye on things and can step in to help whenever you want us to.",
+    "description": "Our <b>passive subscriptions</b> put you in the driving seat. You have <b>control over your service</b> and it's evolution while we keep an eye on things and can step in to help whenever you want us to.<br /><br /><i>Select a feature from the list below to learn more</i>",
     "plans": [
         {
             "name": "Operations",
             "price": "£",
             "description": "Peace of mind about your resources",
             "features": [
-                "Hardware Issue Notifications",
-                "Support with Hardware Repair",
-                "Root Access",
-                "Full Environment Control",
-                "Certified Hardware States"
+            {
+                "feature": "Hardware Issue Notifications", 
+                "info": "Our systems monitor your hardware and notify you of faults at the earliest possible point."
+            },
+            {
+                "feature": "Support with Hardware Repair", 
+                "info": "Our team is ready to assist with the hardware repair process at your behest. Simply handover the affected components and we'll liaise with hardware vendors and data centre contacts to get the repair underway."
+            },
+            {
+                "feature": "Root Access", 
+                "info": "The power is in your hands, with root access across your HPC service you can make the changes you need."
+            },
+            {
+                "feature": "Full Environment Control", 
+                "info": "Your environment is yours to modify, evolve and control how you would like to build the exact service you need."
+            },
+            {
+                "feature": "Certified Hardware States", 
+                "info": "Our team verifies functional hardware configurations to ensure base system stability."
+            }
             ],
             "altname": "Active Subscription",
             "altfeatures": [
@@ -59,9 +74,18 @@ function showSupport(evt, supportType) {
             "price": "££",
             "description": "Collaborate on your HPC service",
             "features": [
-                "Certified Hardware & Software States",
-                "Environment Modification Training",
-                "Example Deployments"
+            {
+                "feature": "Certified Hardware States", 
+                "info": "Our team verifies functional hardware configurations to ensure base system stability."
+            },
+            {
+                "feature": "Environment Modification Training", 
+                "info": "Training on best practices and change control methodology to stay on top of your evolving service."
+            },
+            {
+                "feature": "Example Deployments", 
+                "info": "Access to demonstration environments for reference when implementing your system changes."
+            }
             ],
             "altname": "Active Subscription",
             "altfeatures": [
@@ -74,8 +98,14 @@ function showSupport(evt, supportType) {
             "price": "£££",
             "description": "Hands-on assistance with architecting your service",
             "features": [
-                "Environment Diagnostics",
-                "Hourly-rate Specialist Assistance"
+                {
+                    "feature": "Environment Diagnostics", 
+                    "info": "Assistance with understanding and troubleshooting your HPC environment."
+                },
+                {
+                    "feature": "Hourly-rate Specialist Assistance", 
+                    "info": "Open contact with our specialists to help with environment modifications."
+                }
             ],
             "altname": "Active Subscription",
             "altfeatures": [
@@ -113,17 +143,29 @@ function showSupport(evt, supportType) {
 {{< pricing-table-1 >}}
 {
     "title": "Active HPC Service Subscription",
-    "description": "Our <b>active subscriptions</b> streamline you service delivery. By engaging with a ConcertIM-designed solution you have <b>peace-of-mind</b> knowing that our tried-and-tested methodologies and architecture will <b>stand the test of time</b>.",
+    "description": "Our <b>active subscriptions</b> streamline you service delivery. By engaging with a ConcertIM-designed solution you have <b>peace-of-mind</b> knowing that our tried-and-tested methodologies and architecture will <b>stand the test of time</b>.<br /><br /><i>Select a feature from the list below to learn more</i>",
     "plans": [
         {
             "name": "Operations",
             "price": "£",
             "description": "Base-level service gurantee",
             "features": [
-              "[Proactive Hardware Repair](/subscriptions/active/proactive-hardware-repair)",
-              "Hardware Diagnostics",
-              "Base Environment Delivery",
-              "Service Health Reporting"
+            {
+                "feature": "Proactive Hardware Repair",
+                "info": "Our team and systems monitor your hardware to identify faults at the earliest possible point and immediately begin liaising with hardware vendor, data centre contacts and the customer to being repair. This reduces the downtime and service impact of hardware failures." 
+            },
+            {
+                "feature": "Hardware Diagnostics", 
+                "info": "Our team has a suite of processes and tools to monitor, diagnose and benchmark your hardware to ensure that it is functioning as expected. If in doubt then the diagnostic process can be relaunched to validate system performance."
+            },
+            {
+                "feature": "Base Environment Delivery", 
+                "info": "Through our standardised HPC stack we are able to guarantee the base interconnectivity and functionality of your HPC service."
+            },
+            {
+                "feature": "Service Health Reporting", 
+                "info": "Our team regularly checks and provides insights into service health and areas that may need attention."
+            }
             ],
             "altname": "Passive Subscription",
             "altfeatures": [
@@ -136,11 +178,26 @@ function showSupport(evt, supportType) {
             "price": "££",
             "description": "Full-stack service functionality",
             "features": [
-              "Proactive Hardware Repair",
-              "Hardware Diagnostics",
-              "Service Health Reporting",
-              "Workflow Analysis",
-              "Advanced Proactive Diagnostics & Recommendations"
+            {
+                "feature": "Proactive Hardware Repair",
+                "info": "Our team and systems monitor your hardware to identify faults at the earliest possible point and immediately begin liaising with hardware vendor, data centre contacts and the customer to being repair. This reduces the downtime and service impact of hardware failures." 
+            },
+            {
+                "feature": "Hardware Diagnostics", 
+                "info": "Our team has a suite of processes and tools to monitor, diagnose and benchmark your hardware to ensure that it is functioning as expected. If in doubt then the diagnostic process can be relaunched to validate system performance."
+            },
+            {
+                "feature": "Service Health Reporting", 
+                "info": "Our team regularly checks and provides insights into service health and areas that may need attention."
+            },
+            {
+                "feature": "Workflow Analysis", 
+                "info": "Understand user workloads through insights and use them to reduce costs, improve efficiency and evolve workflows."
+            },
+            {
+                "feature": "Advanced Proactive Diagnostics & Recommendations", 
+                "info": "Through our standardised HPC stack we can ensure HPC service integrity and continue to provide recommendations to help grow the service to meet evolving needs."
+            }
             ],
             "altname": "Passive Subscription",
             "altfeatures": [
@@ -155,12 +212,30 @@ function showSupport(evt, supportType) {
             "price": "£££",
             "description": "Bespoke service solutions",
             "features": [
-              "Proactive Hardware Repair",
-              "Hardware Diagnostics",
-              "Service Health Reporting",
-              "Workflow Analysis",
-              "Advanced Diagnostics & Recommendations",
-              "Cost-Scoped Specialist Environment Assistance"
+            {
+                "feature": "Proactive Hardware Repair",
+                "info": "Our team and systems monitor your hardware to identify faults at the earliest possible point and immediately begin liaising with hardware vendor, data centre contacts and the customer to being repair. This reduces the downtime and service impact of hardware failures." 
+            },
+            {
+                "feature": "Hardware Diagnostics", 
+                "info": "Our team has a suite of processes and tools to monitor, diagnose and benchmark your hardware to ensure that it is functioning as expected. If in doubt then the diagnostic process can be relaunched to validate system performance."
+            },
+            {
+                "feature": "Service Health Reporting", 
+                "info": "Our team regularly checks and provides insights into service health and areas that may need attention."
+            },
+            {
+                "feature": "Workflow Analysis", 
+                "info": "Understand user workloads through insights and use them to reduce costs, improve efficiency and evolve workflows."
+            },
+            {
+                "feature": "Advanced Proactive Diagnostics & Recommendations", 
+                "info": "Through our standardised HPC stack we can ensure HPC service integrity and continue to provide recommendations to help grow the service to meet evolving needs."
+            },
+            {
+                "feature": "Cost-Scoped Specialist Environment Assistance", 
+                "info": "Ability to evolve the service further through clearly defined packets of work detailing costs, timescales and implementation details."
+            }
             ],
             "altname": "Passive Subscription",
             "altfeatures": [

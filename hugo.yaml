@@ -91,6 +91,7 @@ module:
     min: 0.80.0
   imports:
     - path: github.com/hugo-mods/icons
+    - path: github.com/divinerites/plausible-hugo
 build:
   writeStats: true
   buildStats:

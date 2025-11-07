@@ -85,6 +85,10 @@ params:
         buttonText: Subscribe
         placeholder: Enter your email
         disclaimer: We respect your privacy. Unsubscribe at any time.
+  plausible:
+    enable: true
+    domain: "concertim.com"
+    selfhosted_domain: "plausible.concertim.com"
 module:
   hugoVersion:
     extended: true

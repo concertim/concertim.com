@@ -82,7 +82,7 @@ params:
         placeholder: Enter your email
         disclaimer: We respect your privacy. Unsubscribe at any time.
   plausible:
-    enable: true
+    enable: false
     domain: "concertim.com"
     selfhosted_domain: "plausible.concertim.com"
 module:

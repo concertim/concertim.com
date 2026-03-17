@@ -81,17 +81,12 @@ params:
         buttonText: Subscribe
         placeholder: Enter your email
         disclaimer: We respect your privacy. Unsubscribe at any time.
-  plausible:
-    enable: false
-    domain: "concertim.com"
-    selfhosted_domain: "plausible.concertim.com"
 module:
   hugoVersion:
     extended: true
     min: 0.80.0
   imports:
     - path: github.com/hugo-mods/icons
-    - path: github.com/divinerites/plausible-hugo
 build:
   writeStats: true
   buildStats:

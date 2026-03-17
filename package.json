@@ -1,8 +1,10 @@
 {
   "dependencies": {
-    "@tailwindcss/postcss": "^4.2.1",
     "@tailwindcss/forms": "^0.5.7",
+    "@tailwindcss/postcss": "^4.2.1",
     "@tailwindcss/typography": "^0.5.10",
-    "hugo-sassify-theme": "file:themes/hugo-saasify-theme"
+    "hugo-sassify-theme": "file:themes/hugo-saasify-theme",
+    "postcss": "^8.5.8",
+    "tailwindcss": "^4.2.1"
   }
 }

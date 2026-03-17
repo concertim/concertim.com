@@ -3,6 +3,7 @@
     "postcss": "^8.5.3"
   },
   "dependencies": {
+    "@tailwindcss/postcss": "^4.2.1",
     "hugo-sassify-theme": "file:themes/hugo-saasify-theme"
   }
 }

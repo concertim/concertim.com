@@ -9,10 +9,6 @@ pygmentsUseClasses: true
 enableEmoji: true        # Enable emoji support
 enableGitInfo: true      # Enable Git info for lastmod
 
-# Required Build Configuration
-build:
-  writeStats: true
-
 taxonomies:
   category: categories
   tag: tags

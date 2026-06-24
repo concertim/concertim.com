@@ -1,6 +1,6 @@
 ---
 title: "Fully Managed"
-order: 2
+order: 1
 label: "Fully Managed"
 dial: "we"
 oneLiner: "We run it. You get results."

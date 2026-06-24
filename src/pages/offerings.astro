@@ -35,7 +35,7 @@ const offeringBodies = (
     <div class="wrap stack">
       <h2>The comparison</h2>
       <p class="muted">
-        The same five components, configured three ways. This is the whole
+        The same five components, configured two ways. This is the whole
         decision.
       </p>
       <ComponentMatrix />
@@ -44,7 +44,7 @@ const offeringBodies = (
 
   <section class="section paper-2-bg">
     <div class="wrap">
-      <h2>The three offerings</h2>
+      <h2>The offerings</h2>
       {
         offerings.map((o, i) => {
           const Body = offeringBodies[i];
@@ -52,7 +52,7 @@ const offeringBodies = (
             <article class="offer-row">
               <div>
                 <p class="offer-row__num">
-                  {String(o.data.order + 1).padStart(2, "0")} / {dialLabels[o.data.dial]}
+                  {String(i + 1).padStart(2, "0")} / {dialLabels[o.data.dial]}
                 </p>
                 <h3 class="riso" data-text={o.data.label}>{o.data.label}</h3>
                 <p style="font-family:var(--display);font-size:clamp(1.2rem,3vw,1.6rem);line-height:1;margin:0.3rem 0 0.8rem">

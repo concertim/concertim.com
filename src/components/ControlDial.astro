@@ -5,7 +5,7 @@ import { components, dialLabels } from "../data/components";
 const offerings = (await getCollection("offerings")).sort(
   (a, b) => a.data.order - b.data.order,
 );
-const defaultIndex = 1; // middle stop (Collaborative Managed)
+const defaultIndex = 0; // Passive Reporting (the entry-level end of the dial)
 ---
 
 <div class="dial" data-dial>

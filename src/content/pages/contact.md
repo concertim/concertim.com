@@ -11,7 +11,7 @@ hero:
 
 Email is the simplest way in. Tell us a little about your workloads and how
 hands-on you want to be, and we'll come back with where you'd sit on the dial
-— Passive Reporting, Collaborative Managed, or Fully Managed — and what that
+— Passive Reporting or Fully Managed — and what that
 looks like in practice.
 
 There's no form to fill in and nothing sent to a third party: just a plain

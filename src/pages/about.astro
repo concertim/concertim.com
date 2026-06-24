@@ -1,0 +1,35 @@
+---
+import Base from "../layouts/Base.astro";
+import { getEntry, render } from "astro:content";
+import { site } from "../data/site";
+
+const page = await getEntry("pages", "about");
+const hero = page?.data.hero;
+let Body: any = null;
+if (page) {
+  const { Content } = await render(page);
+  Body = Content;
+}
+---
+
+<Base title={page?.data.title ?? "About"} description={page?.data.description}>
+  <section class="page-hero">
+    <div class="wrap">
+      {hero && <span class="kicker">{hero.kicker}</span>}
+      <h1 class="riso" data-text={hero?.headline ?? "About"}>{hero?.headline ?? "About"}</h1>
+      {hero?.sub && <p style="max-width:34em;font-size:1.2rem">{hero.sub}</p>}
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      {Body && <div class="prose"><Body /></div>}
+      <div style="margin-top:2.5rem">
+        <a href="/offerings" class="btn btn--primary">See the offerings →</a>
+        <a href={`mailto:${site.email}`} class="btn btn--ghost" style="margin-left:0.5rem">
+          Email us
+        </a>
+      </div>
+    </div>
+  </section>
+</Base>

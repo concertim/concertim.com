@@ -1,0 +1,30 @@
+---
+import Base from "../layouts/Base.astro";
+import { getEntry, render } from "astro:content";
+
+const page = await getEntry("pages", "terms-and-conditions");
+const hero = page?.data.hero;
+let Body: any = null;
+if (page) {
+  const { Content } = await render(page);
+  Body = Content;
+}
+---
+
+<Base title={page?.data.title ?? "Terms & Conditions"} description={page?.data.description}>
+  <section class="page-hero">
+    <div class="wrap">
+      {hero && <span class="kicker">{hero.kicker}</span>}
+      <h1 class="riso" data-text={hero?.headline ?? "Terms & Conditions"}>
+        {hero?.headline ?? "Terms & Conditions"}
+      </h1>
+      {hero?.sub && <p style="max-width:34em;font-size:1.2rem">{hero.sub}</p>}
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      {Body && <div class="prose"><Body /></div>}
+    </div>
+  </section>
+</Base>

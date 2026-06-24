@@ -1,10 +1,16 @@
 {
+  "name": "concertim.com",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check": "astro check"
+  },
   "dependencies": {
-    "@tailwindcss/forms": "^0.5.7",
-    "@tailwindcss/postcss": "^4.2.1",
-    "@tailwindcss/typography": "^0.5.10",
-    "hugo-sassify-theme": "file:themes/hugo-saasify-theme",
-    "postcss": "^8.5.8",
-    "tailwindcss": "^4.2.1"
+    "astro": "^5.0.0",
+    "@astrojs/sitemap": "^3.0.0"
   }
 }

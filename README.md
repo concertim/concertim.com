@@ -1,39 +1,59 @@
+# concertim.com
 
-## Project Setup
+Static marketing site for ConcertIM, built with [Astro](https://astro.build).
+Markdown-managed content, statically generated, **no external CSS/JS
+dependencies** — fonts and styles are self-hosted and bundled at build.
+
+## Stack
+
+- **Astro 5** — static output, markdown content collections.
+- **One hand-authored stylesheet** (`src/styles/global.css`) — risograph
+  design system, no Tailwind, no PostCSS, no CSS framework.
+- **Self-hosted OFL fonts** in `public/fonts/` (Anton, Montserrat, Space Mono).
+
+## Where things live
+
+- `src/content/pages/*.md` — page prose (about, offerings, contact, privacy, terms). Edit copy here.
+- `src/content/offerings/*.md` — each offering is one file: front matter holds the matrix row + pitches, body holds the prose.
+- `src/data/site.ts` — nav, footer, email, company details.
+- `src/data/components.ts` — the five modular components + dial labels.
+- `src/data/home.ts` — short home-page copy.
+- `src/styles/global.css` — the whole design system.
+- `src/components/` + `src/layouts/` — UI.
+
+## Develop
 
 ```bash
-hugo new site concertim.com
-cd concertim.com
-git init
-git submodule add https://github.com/chaoming/hugo-saasify-theme themes/hugo-saasify-theme
-cp themes/hugo-saasify-theme/tailwind.config.copy.js ./tailwind.config.js
 npm install
+npm run dev      # http://localhost:4321
 ```
 
-Enabled mod support for icons:
-```
-hugo mod init github.com/concertim/website
+## Build
 
-# added import and path for icons module to hugo.yaml
-
-hugo mod get -u
-```
-
-## Dev
-
-- Run dev server on localhost (http://localhost:1313)
 ```bash
-hugo server -F -D --cleanDestinationDir
+npm run build   # output → dist/
+npm run preview # serve the built site
 ```
 
-## Release 
+The site is hosted on statichost.uk. Deploy by building and syncing `dist/`
+to the web root (or trigger a deploy from the statichost dashboard).
 
-The site is hosted with statichost.uk. Automated deployments are not configured. To deploy, login to that dashboard and click deploy.
+## Analytics (optional, off by default)
 
-### OLD METHOD
+No analytics script is emitted unless `ANALYTICS_SRC` is set to a
+**first-party / self-hosted** script URL, e.g. a self-hosted Plausible/Umami
+instance on `https://a.concertim.com/script.js`. With it unset, the built
+site makes zero external requests.
 
-To build the site simply
 ```bash
-hugo --cleanDestinationDir
+ANALYTICS_SRC=https://a.concertim.com/script.js npm run build
 ```
-Then sync the contents of `public/` to the web root of a web server somewhere (probably want to remove any existing old/stuff so something like `rsync -auv --delete`) 
+
+Standing up that analytics instance is separate from this build.
+
+## Notes
+
+- ConcertIM is **not** a consultancy. Offerings are framed around the
+  *control dial* — how much the customer runs vs how much ConcertIM runs.
+  See `BUSINESS.md` for the source-of-truth on offerings and the modular
+  component matrix.

@@ -1,0 +1,18 @@
+---
+import Base from "../layouts/Base.astro";
+const code = "404";
+---
+
+<Base title="Page not found" description="That page doesn't exist.">
+  <section class="section">
+    <div class="wrap center">
+      <p class="kicker">Lost the signal</p>
+      <h1 class="riso" data-text={code} style="font-size:clamp(6rem,25vw,16rem)">{code}</h1>
+      <p class="muted" style="max-width:30em;margin-inline:auto">
+        That page doesn't exist. The dial has three stops, and this isn't one
+        of them.
+      </p>
+      <a href="/" class="btn btn--primary" style="margin-top:1rem">← Back home</a>
+    </div>
+  </section>
+</Base>

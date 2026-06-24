@@ -1,0 +1,73 @@
+---
+import Base from "../layouts/Base.astro";
+import ControlDial from "../components/ControlDial.astro";
+import { home } from "../data/home";
+import { site } from "../data/site";
+
+const headline = "How hands-on do you want to be?";
+---
+
+<Base title={site.name} description={home.hero.sub}>
+  <!-- Hero + dial -->
+  <section class="section">
+    <div class="wrap">
+      <span class="kicker">{home.hero.kicker}</span>
+      <h1 class="riso" data-text={headline}>{headline}</h1>
+      <p style="max-width:34em;font-size:1.2rem">{home.hero.sub}</p>
+      <p class="muted" style="font-family:var(--mono);font-size:0.85rem;margin-top:2rem">
+        {home.dialPrompt}
+      </p>
+      <div style="margin-top:1.5rem">
+        <ControlDial />
+      </div>
+    </div>
+  </section>
+
+  <!-- Sustainability -->
+  <section class="section paper-2-bg">
+    <div class="wrap">
+      <div class="grid-3" style="align-items:start">
+        <div style="grid-column:span 2">
+          <span class="kicker">{home.sustainability.kicker}</span>
+          <h2 class="riso" data-text={home.sustainability.headline}>
+            {home.sustainability.headline}
+          </h2>
+          <p style="max-width:36em">{home.sustainability.body}</p>
+        </div>
+        <div class="panel panel--teal" style="align-self:start">
+          <p style="font-family:var(--display);font-size:clamp(2.5rem,8vw,4rem);line-height:0.9;margin:0">
+            ↓CO₂
+          </p>
+          <p style="font-family:var(--mono);font-size:0.8rem;margin-top:0.5rem">
+            measured, not guessed
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Alces credibility -->
+  <section class="section">
+    <div class="wrap">
+      <div class="panel panel--ink">
+        <span class="kicker" style="color:var(--orange)">{home.alces.kicker}</span>
+        <h2 style="color:var(--cream)">{home.alces.headline}</h2>
+        <p style="max-width:40em;color:#d8d2c4">{home.alces.body}</p>
+        <a href="/about" class="btn btn--primary" style="margin-top:0.5rem">
+          More about us →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section section--tight">
+    <div class="wrap center">
+      <h2 class="riso" data-text={home.cta.headline}>{home.cta.headline}</h2>
+      <p style="max-width:30em;margin-inline:auto" class="muted">{home.cta.body}</p>
+      <a href={`mailto:${site.email}`} class="btn btn--primary" style="margin-top:1rem">
+        ✉ {home.cta.button}
+      </a>
+    </div>
+  </section>
+</Base>

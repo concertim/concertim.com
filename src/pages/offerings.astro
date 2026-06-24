@@ -1,0 +1,72 @@
+---
+import Base from "../layouts/Base.astro";
+import ComponentMatrix from "../components/ComponentMatrix.astro";
+import { getCollection, getEntry, render } from "astro:content";
+import { dialLabels } from "../data/components";
+
+const page = await getEntry("pages", "offerings");
+const offerings = (await getCollection("offerings")).sort(
+  (a, b) => a.data.order - b.data.order,
+);
+const hero = page?.data.hero;
+let PageBody: any = null;
+if (page) {
+  const { Content } = await render(page);
+  PageBody = Content;
+}
+const offeringBodies = (
+  await Promise.all(offerings.map((o) => render(o)))
+).map((r) => r.Content);
+---
+
+<Base title={page?.data.title ?? "Offerings"} description={page?.data.description}>
+  <section class="page-hero">
+    <div class="wrap">
+      {hero && <span class="kicker">{hero.kicker}</span>}
+      <h1 class="riso" data-text={hero?.headline ?? "Offerings"}>
+        {hero?.headline ?? "Offerings"}
+      </h1>
+      {hero?.sub && <p style="max-width:34em;font-size:1.2rem">{hero.sub}</p>}
+      {PageBody && <div class="prose"><PageBody /></div>}
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap stack">
+      <h2>The comparison</h2>
+      <p class="muted">
+        The same five components, configured three ways. This is the whole
+        decision.
+      </p>
+      <ComponentMatrix />
+    </div>
+  </section>
+
+  <section class="section paper-2-bg">
+    <div class="wrap">
+      <h2>The three offerings</h2>
+      {
+        offerings.map((o, i) => {
+          const Body = offeringBodies[i];
+          return (
+            <article class="offer-row">
+              <div>
+                <p class="offer-row__num">
+                  {String(o.data.order + 1).padStart(2, "0")} / {dialLabels[o.data.dial]}
+                </p>
+                <h3 class="riso" data-text={o.data.label}>{o.data.label}</h3>
+                <p style="font-family:var(--display);font-size:clamp(1.2rem,3vw,1.6rem);line-height:1;margin:0.3rem 0 0.8rem">
+                  {o.data.oneLiner}
+                </p>
+                <p style="max-width:40em">{o.data.pitch}</p>
+                <div class="prose">
+                  <Body />
+                </div>
+              </div>
+            </article>
+          );
+        })
+      }
+    </div>
+  </section>
+</Base>

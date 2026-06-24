@@ -1,29 +1,18 @@
-### Hugo ###
-# Generated files by hugo
-public/
-resources/_gen/
-.hugo_build.lock
+# build output
+dist/
+.astro/
 
-### Vim ###
-# Swap
-[._]*.s[a-v][a-z]
-[._]*.sw[a-p]
-[._]s[a-rt-v][a-z]
-[._]ss[a-gi-z]
-[._]sw[a-p]
+# deps
+node_modules/
 
-### From Theme ###
-Thumbs.db
+# env
+.env
+.env.production
+.env.*local
+
+# misc
 .DS_Store
-.dist
-.tmp
-.lock
-.sass-cache
-npm-debug.log
-node_modules
-builds
-package-lock.json
-jsconfig.json
-hugo_stats.json
-go.sum
-yarn.lock
+*.log
+npm-debug.log*
+
+*.swp

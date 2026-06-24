@@ -1,0 +1,44 @@
+---
+import Base from "../layouts/Base.astro";
+import { getEntry, render } from "astro:content";
+import { site } from "../data/site";
+
+const page = await getEntry("pages", "contact");
+const hero = page?.data.hero;
+let Body: any = null;
+if (page) {
+  const { Content } = await render(page);
+  Body = Content;
+}
+---
+
+<Base title={page?.data.title ?? "Contact"} description={page?.data.description}>
+  <section class="page-hero">
+    <div class="wrap">
+      {hero && <span class="kicker">{hero.kicker}</span>}
+      <h1 class="riso" data-text={hero?.headline ?? "Contact"}>
+        {hero?.headline ?? "Contact"}
+      </h1>
+      {hero?.sub && <p style="max-width:34em;font-size:1.2rem">{hero.sub}</p>}
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="grid-3" style="align-items:start">
+        <div style="grid-column:span 2">
+          {Body && <div class="prose"><Body /></div>}
+        </div>
+        <div class="panel panel--orange" style="align-self:start">
+          <p style="font-family:var(--mono);font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;margin:0">
+            Email
+          </p>
+          <p style="font-family:var(--display);font-size:clamp(1.6rem,4vw,2.4rem);line-height:1;margin:0.5rem 0 1rem;word-break:break-all">
+            {site.email}
+          </p>
+          <a href={`mailto:${site.email}`} class="btn btn--ink">✉ Send an email</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Base>

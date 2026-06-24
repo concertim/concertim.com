@@ -1,0 +1,50 @@
+---
+import { getCollection } from "astro:content";
+import { components } from "../data/components";
+
+interface Props {
+  activeSlug?: string;
+}
+const { activeSlug } = Astro.props;
+
+const offerings = (await getCollection("offerings")).sort(
+  (a, b) => a.data.order - b.data.order,
+);
+---
+
+<div class="matrix-scroll">
+  <table class="matrix">
+    <thead>
+      <tr>
+        <th scope="col">Component</th>
+        {
+          offerings.map((o) => (
+            <th
+              scope="col"
+              class={activeSlug === o.data.label ? "col-active" : ""}
+            >
+              {o.data.label}
+            </th>
+          ))
+        }
+      </tr>
+    </thead>
+    <tbody>
+      {
+        components.map((c) => (
+          <tr>
+            <th scope="row">
+              {c.label}
+              <span class="matrix__help">{c.help}</span>
+            </th>
+            {offerings.map((o) => (
+              <td class={activeSlug === o.data.label ? "is-active" : ""}>
+                {o.data.matrix[c.key]}
+              </td>
+            ))}
+          </tr>
+        ))
+      }
+    </tbody>
+  </table>
+</div>

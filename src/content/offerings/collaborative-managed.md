@@ -13,8 +13,6 @@ matrix:
   health: "Shared"
 ---
 
-## Collaborative Managed
-
 You have the keys — **root access and full control stay with you** — but we
 share the load. You get a live feed of what ConcertIM sees in your
 environment, we respond to alerts **collaboratively within a business day**,

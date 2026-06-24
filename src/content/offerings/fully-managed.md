@@ -13,8 +13,6 @@ matrix:
   health: "ConcertIM"
 ---
 
-## Fully Managed
-
 ConcertIM takes **instant (9–5) alert response**, **owns**
 the environment's health, and delivers a standardised, tried-and-tested HPC
 stack built on two decades of real engineering through our Alces partnership.

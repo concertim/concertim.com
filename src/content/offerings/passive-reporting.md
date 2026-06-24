@@ -13,8 +13,6 @@ matrix:
   health: "You"
 ---
 
-## Passive Reporting
-
 The service is **yours**. You keep root, you keep full control of the
 environment, and you decide how it evolves. ConcertIM stays on the outside:
 we can be called in to review your environment health and hand you a 

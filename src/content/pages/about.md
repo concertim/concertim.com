@@ -4,7 +4,7 @@ description: "Who ConcertIM is, the Alces partnership behind us, and why we buil
 hero:
   kicker: "About ConcertIM"
   headline: "HPC, built to be run well."
-  sub: "We run HPC and AI platforms as a subscription — so your team can spend its time on research, not on the plumbing."
+  sub: "We run HPC and AI platforms as a subscription — so your team can spend its time on service delivery, not on the plumbing."
 ---
 
 ## Who we are

@@ -8,9 +8,9 @@ pitch: "Full control stays with you. We review your system health on a schedule 
 matrix:
   access: "Root"
   monitoring: "None"
-  action: "Customer"
+  action: "You"
   response: "Scheduled"
-  health: "Customer"
+  health: "You"
 ---
 
 ## Passive Reporting

@@ -3,26 +3,23 @@ title: "Passive Reporting"
 order: 0
 label: "Passive Reporting"
 dial: "you"
-oneLiner: "You run it. We watch, and report."
-pitch: "Full control stays with you. We monitor your hardware for faults, hand you scheduled reports, and step in only when you ask. The most hands-on, lowest-cost way to run HPC with a safety net."
+oneLiner: "You run it. We're here when you need us."
+pitch: "Full control stays with you. We review your system health on a schedule that works for you and step in only when you ask. The most hands-on, lowest-cost way to run HPC with a safety net."
 matrix:
   access: "Root"
   monitoring: "None"
   action: "Customer"
-  response: "Scheduled (reports)"
+  response: "Scheduled"
   health: "Customer"
 ---
 
 ## Passive Reporting
 
-The service stays **yours**. You keep root, you keep full control of the
+The service is **yours**. You keep root, you keep full control of the
 environment, and you decide how it evolves. ConcertIM stays on the outside:
-we monitor your hardware for signs of degradation and hand you **scheduled
-reports** on what we see.
+we can be called in to review your environment health and hand you a 
+**wellness review** on what we see and lend a hand where it matters most
+to you.
 
-When something needs doing — a suspected hardware fault, a repair to
-coordinate — you call us in. We liaise with the hardware vendor and data
-centre to get it moving, then step back out.
-
-**Best for** teams that want to run their own platform without bearing the
-monitoring burden alone, at the lowest cost of engagement.
+**Best for** teams that can run their own platform and want periodic 
+health insight.

@@ -38,7 +38,10 @@ const offerings = (await getCollection("offerings")).sort(
               <span class="matrix__help">{c.help}</span>
             </th>
             {offerings.map((o) => (
-              <td class={activeSlug === o.data.label ? "is-active" : ""}>
+              <td
+                class={activeSlug === o.data.label ? "is-active" : ""}
+                data-label={o.data.label}
+              >
                 {o.data.matrix[c.key]}
               </td>
             ))}

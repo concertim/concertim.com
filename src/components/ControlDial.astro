@@ -50,13 +50,15 @@ const defaultIndex = 1; // middle stop (Collaborative Managed)
           {o.data.oneLiner}
         </p>
         <p style="max-width:40em">{o.data.pitch}</p>
-        <dl style="margin-top:1.25rem;display:grid;grid-template-columns:max-content 1fr;gap:0.3rem 1rem;font-family:var(--mono);font-size:0.82rem">
-          {components.map((c) => (
-            <>
-              <dt style="text-transform:uppercase;letter-spacing:0.04em;color:var(--ink-soft)">{c.label}</dt>
-              <dd style="margin:0;font-weight:700;color:var(--orange-dim)">{o.data.matrix[c.key]}</dd>
-            </>
-          ))}
+        <dl class="dial__matrix">
+          {
+            components.map((c) => (
+              <div class="dial__matrix__row">
+                <dt>{c.label}</dt>
+                <dd>{o.data.matrix[c.key]}</dd>
+              </div>
+            ))
+          }
         </dl>
       </div>
     ))

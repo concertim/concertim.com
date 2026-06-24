@@ -440,6 +440,41 @@ strong {
   min-height: 9rem;
 }
 
+/* ---- Dial component list (per-offering matrix row inside the dial) ---- */
+.dial__matrix {
+  margin-top: 1.25rem;
+  display: grid;
+  gap: 0.3rem 1rem;
+  font-family: var(--mono);
+  font-size: 0.82rem;
+}
+.dial__matrix__row {
+  display: grid;
+  grid-template-columns: minmax(0, max-content) minmax(0, 1fr);
+  gap: 0.5rem 1rem;
+  align-items: baseline;
+}
+.dial__matrix dt {
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--ink-soft);
+  overflow-wrap: anywhere;
+}
+.dial__matrix dd {
+  margin: 0;
+  font-weight: 700;
+  color: var(--orange-dim);
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+@media (max-width: 480px) {
+  /* Stack label above value so long labels/values never crowd the dial. */
+  .dial__matrix__row {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.1rem;
+  }
+}
+
 /* ---- Component matrix ---- */
 .matrix {
   width: 100%;
@@ -498,6 +533,77 @@ strong {
   border: var(--line);
   box-shadow: var(--shadow-hard);
   background: var(--cream);
+}
+
+/* Mobile: collapse the comparison table into stacked per-component cards
+   so nothing overflows or scrolls horizontally. Each component becomes a
+   bordered card; each offering value is prefixed with its offering name. */
+@media (max-width: 720px) {
+  .matrix-scroll {
+    overflow-x: visible;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+  }
+  .matrix,
+  .matrix tbody,
+  .matrix tr,
+  .matrix td,
+  .matrix th {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    border: none;
+    overflow-wrap: anywhere;
+  }
+  .matrix thead {
+    display: none;
+  }
+  .matrix tbody tr {
+    border: var(--line-thin);
+    box-shadow: var(--shadow-hard-sm);
+    background: var(--cream);
+    margin-bottom: 1rem;
+  }
+  .matrix tbody tr:last-child {
+    margin-bottom: 0;
+  }
+  .matrix tbody th {
+    background: var(--ink);
+    color: var(--cream);
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    padding: 0.7rem 0.9rem;
+    width: auto;
+  }
+  .matrix tbody th .matrix__help {
+    color: #b9b2a2;
+    margin-top: 0.2rem;
+    overflow-wrap: anywhere;
+  }
+  .matrix td {
+    padding: 0.55rem 0.9rem;
+    font-size: 0.9rem;
+    border-top: 1.5px solid var(--paper-2);
+    overflow-wrap: anywhere;
+  }
+  .matrix td::before {
+    content: attr(data-label);
+    display: block;
+    font-family: var(--mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--teal-dim);
+    margin-bottom: 0.15rem;
+  }
+  .matrix td.is-active {
+    background: var(--orange);
+    color: var(--ink);
+  }
+  .matrix td.is-active::before {
+    color: var(--ink);
+  }
 }
 
 /* ---- Offering card row ---- */

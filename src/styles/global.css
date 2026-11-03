@@ -606,6 +606,98 @@ strong {
   }
 }
 
+/* ---- Same-core process strip (the Watch→Report→Prioritise→Recommend fork) ---- */
+.process {
+  display: grid;
+  gap: clamp(1.25rem, 3vw, 2rem);
+}
+.process__row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: clamp(0.75rem, 2vw, 1.5rem);
+}
+.process__card {
+  background: var(--cream);
+  border: var(--line-thin);
+  box-shadow: var(--shadow-hard-sm);
+  padding: 1.1rem 1.2rem 1.2rem;
+}
+.process__num {
+  font-family: var(--mono);
+  font-weight: 700;
+  font-size: 0.8rem;
+  color: var(--orange-dim);
+  margin: 0 0 0.35rem;
+}
+.process__name {
+  font-family: var(--display);
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  margin: 0 0 0.4rem;
+}
+.process__card p {
+  font-size: 0.9rem;
+  margin: 0;
+}
+/* The fork: one shared step, two offering endings. */
+.process__fork {
+  background: var(--ink);
+  color: var(--cream);
+  border: var(--line);
+  box-shadow: var(--shadow-hard);
+  padding: clamp(1.25rem, 3vw, 2rem);
+}
+.process__fork-head {
+  display: flex;
+  align-items: baseline;
+  gap: 0.9rem;
+}
+.process__fork-head .process__num {
+  color: var(--orange);
+  margin: 0;
+}
+.process__fork-head .process__name {
+  color: var(--cream);
+  font-size: 1.5rem;
+  margin: 0;
+}
+.process__options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(0.75rem, 2vw, 1.5rem);
+  margin-top: 1.25rem;
+}
+.process__option {
+  padding: 1.1rem 1.2rem;
+  border: var(--line-thin);
+}
+.process__option--passive {
+  background: var(--teal);
+  color: var(--cream);
+}
+.process__option--managed {
+  background: var(--orange);
+  color: var(--ink);
+}
+.process__option-label {
+  font-family: var(--mono);
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin: 0 0 0.5rem;
+}
+.process__option p {
+  font-size: 0.9rem;
+  margin: 0;
+}
+@media (max-width: 860px) {
+  .process__row,
+  .process__options {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* ---- Offering card row ---- */
 .offer-row {
   display: grid;

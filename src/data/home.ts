@@ -20,7 +20,7 @@ export const home = {
   },
   cta: {
     headline: "Pick where you sit on the dial.",
-    body: "Tell us what you run, and how much you'd like us to. We'll work out the rest.",
+    body: "Tell us what you run, and how much you'd like us to. Either way it's the same core process — watch, report, recommend. Only who addresses it changes.",
     button: "Email us",
   },
 } as const;

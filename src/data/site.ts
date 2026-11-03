@@ -16,6 +16,7 @@ export const site = {
 
 export const nav = [
   { label: "Offerings", href: "/offerings" },
+  { label: "Notes", href: "/notes" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
 ] as const;
@@ -23,6 +24,7 @@ export const nav = [
 export const footerNav = {
   site: [
     { label: "Offerings", href: "/offerings" },
+    { label: "Notes", href: "/notes" },
     { label: "About", href: "/about" },
     { label: "Contact", href: "/contact" },
   ],

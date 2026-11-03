@@ -1,0 +1,52 @@
+---
+import Base from "../../layouts/Base.astro";
+import { getCollection, getEntry, render } from "astro:content";
+
+const page = await getEntry("pages", "notes");
+const hero = page?.data.hero;
+let PageBody: any = null;
+if (page) {
+  const { Content } = await render(page);
+  PageBody = Content;
+}
+
+const notes = await getCollection("notes");
+---
+
+<Base title={page?.data.title ?? "Notes"} description={page?.data.description}>
+  <section class="page-hero">
+    <div class="wrap">
+      {hero && <span class="kicker">{hero.kicker}</span>}
+      <h1 class="riso" data-text={hero?.headline ?? "Notes"}>
+        {hero?.headline ?? "Notes"}
+      </h1>
+      {hero?.sub && <p style="max-width:34em;font-size:1.2rem">{hero.sub}</p>}
+      {PageBody && <div class="prose"><PageBody /></div>}
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <h2>The notes</h2>
+      {
+        notes.map((note, i) => (
+          <article class="offer-row">
+            <a
+              href={`/notes/${note.id}`}
+              style="border:none;display:block;color:inherit"
+            >
+              <p class="offer-row__num">
+                {String(i + 1).padStart(2, "0")}
+                {note.data.kicker && <span class="offer-row__tag" style="margin-left:0.75rem">{note.data.kicker}</span>}
+              </p>
+              <h2 class="riso" data-text={note.data.title}>{note.data.title}</h2>
+              {note.data.description && (
+                <p style="max-width:40em;margin:0">{note.data.description}</p>
+              )}
+            </a>
+          </article>
+        ))
+      }
+    </div>
+  </section>
+</Base>

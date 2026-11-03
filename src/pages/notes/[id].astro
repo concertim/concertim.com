@@ -1,0 +1,36 @@
+---
+import Base from "../../layouts/Base.astro";
+import { getCollection, render } from "astro:content";
+
+export async function getStaticPaths() {
+  const notes = await getCollection("notes");
+  return notes.map((note) => ({
+    params: { id: note.id },
+    props: { note },
+  }));
+}
+
+const { note } = Astro.props;
+const { Content } = await render(note);
+---
+
+<Base title={note.data.title} description={note.data.description}>
+  <section class="page-hero">
+    <div class="wrap">
+      {note.data.kicker && <span class="kicker">{note.data.kicker}</span>}
+      <h1 class="riso" data-text={note.data.title}>{note.data.title}</h1>
+      {note.data.description && (
+        <p style="max-width:34em;font-size:1.2rem">{note.data.description}</p>
+      )}
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="prose"><Content /></div>
+      <div style="margin-top:2.5rem">
+        <a href="/notes" class="btn btn--ghost">← All notes</a>
+      </div>
+    </div>
+  </section>
+</Base>

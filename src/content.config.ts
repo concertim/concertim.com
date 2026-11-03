@@ -32,4 +32,16 @@ const offerings = defineCollection({
   }),
 });
 
-export const collections = { pages, offerings };
+// Notes are timestamp-free explorations of how we think about running HPC
+// services. No dates on purpose: posts stay evergreen and can be edited
+// without looking stale. `kicker` is the theme tag shown in the lists.
+const notes = defineCollection({
+  loader: glob({ pattern: "**/*.md", base: "./src/content/notes" }),
+  schema: z.object({
+    title: z.string(),
+    description: z.string().optional(),
+    kicker: z.string().optional(),
+  }),
+});
+
+export const collections = { pages, offerings, notes };

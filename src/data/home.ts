@@ -5,7 +5,7 @@ export const home = {
   hero: {
     kicker: "HPC & AI services, as a subscription",
     headline: "How hands-on do you want to be?",
-    sub: "ConcertIM runs HPC and AI platforms. You decide how much we run and how much you run — from a hands-off, fully-managed service to you keeping the keys and us just keeping watch.",
+    sub: "ConcertIM runs HPC and AI platforms. You decide how much we run and how much you run — from a hands-off, fully-managed service to you keeping the keys while we keep watch with scheduled health reports and the observations that matter.",
   },
   dialPrompt: "Pick a point on the dial. See what changes.",
   sustainability: {

@@ -18,7 +18,7 @@ export const components: Component[] = [
   {
     key: "monitoring",
     label: "Monitoring to You",
-    help: "The monitoring we provide and share with you.",
+    help: "The ongoing monitoring we share with you. Every offering comes with scheduled health reports.",
   },
   {
     key: "action",

@@ -12,7 +12,7 @@ A lot of teams out there sit somewhere in the middle. They want to evolve and de
 
 We think this should be possible rather than a gap between options.  
 
-## What this middle ground looks like
+### What this middle ground looks like
 
 In practice, "someone to look over your shoulder" can mean very different things at different moments depending on your needs. 
 
@@ -24,7 +24,7 @@ In practice, "someone to look over your shoulder" can mean very different things
 
 The middle ground is not a single position, it's a spectrum of unique needs that teams have and may move between as their team and service evolves.
 
-## Control isn't the opposite of support
+### Control isn't the opposite of support
 
 One concern of "handing over the keys" isn't about the managed service provider, it's the concern of losing context. We believe the people who should understand the environment best are the people delivering it to their end-users. 
 

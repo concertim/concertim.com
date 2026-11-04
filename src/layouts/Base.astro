@@ -46,6 +46,7 @@ const canonical = new URL(Astro.url.pathname, site.url).href;
       crossorigin
     />
     {analyticsSrc && <script defer src={analyticsSrc} data-analytics></script>}
+    <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "56c65a667a744353b49df5ee36abcf0a"}'></script><!-- End Cloudflare Web Analytics -->
   </head>
   <body>
     <Grain />

@@ -1,4 +1,5 @@
 ---
+order: 1
 title: "Managed service doesn't mean handing over the keys"
 description: "The most common fear about managed services is losing control. It assumes control is one thing, in one place. It isn't."
 kicker: "Control"

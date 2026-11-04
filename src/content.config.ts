@@ -35,9 +35,11 @@ const offerings = defineCollection({
 // Notes are timestamp-free explorations of how we think about running HPC
 // services. No dates on purpose: posts stay evergreen and can be edited
 // without looking stale. `kicker` is the theme tag shown in the lists.
+// `order` controls their position in the notes list, like offerings.
 const notes = defineCollection({
   loader: glob({ pattern: "**/*.md", base: "./src/content/notes" }),
   schema: z.object({
+    order: z.number(),
     title: z.string(),
     description: z.string().optional(),
     kicker: z.string().optional(),

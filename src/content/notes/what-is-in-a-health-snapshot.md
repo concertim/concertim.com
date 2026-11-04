@@ -1,4 +1,5 @@
 ---
+order: 2
 title: "What's actually in a health snapshot"
 description: "'The service is up' is a fact but not a health assessment. Health comes in layers and it's worth knowing how they relate."
 kicker: "Snapshots"

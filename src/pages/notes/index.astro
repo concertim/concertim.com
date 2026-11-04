@@ -10,7 +10,9 @@ if (page) {
   PageBody = Content;
 }
 
-const notes = await getCollection("notes");
+const notes = (await getCollection("notes")).sort(
+  (a, b) => a.data.order - b.data.order
+);
 ---
 
 <Base title={page?.data.title ?? "Notes"} description={page?.data.description}>

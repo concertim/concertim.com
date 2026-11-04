@@ -1,4 +1,5 @@
 ---
+order: 3
 title: "The 15-minute check-in"
 description: "A feeling for the end-user experience, when practised for fifteen guided minutes on a repeatable cycle becomes the most honest layer of health."
 kicker: "Micro Reports"
